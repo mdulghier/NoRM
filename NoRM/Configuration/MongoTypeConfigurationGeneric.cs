@@ -69,5 +69,11 @@ namespace Norm.Configuration
             ConnectionStrings[typeof(T)] = connectionString;
             MongoConfiguration.FireTypeChangedEvent(typeof(T));
         }
+
+        public void UseAsDiscriminator()
+        {
+            DiscriminatedTypes[typeof (T)] = true;
+            MongoConfiguration.FireTypeChangedEvent((typeof(T)));
+        }
     }
 }

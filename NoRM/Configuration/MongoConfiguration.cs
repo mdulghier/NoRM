@@ -119,5 +119,10 @@ namespace Norm.Configuration
         {
             return _configuration != null ? _configuration.GetConfigurationMap().GetConnectionString(type) : null;
         }
+
+        public static string GetTypeDiscriminator(Type type)
+        {
+            return _configuration.GetConfigurationMap().GetTypeDescriminator(type);
+        }
     }
 }

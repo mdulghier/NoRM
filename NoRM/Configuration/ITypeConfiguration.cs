@@ -21,5 +21,7 @@ namespace Norm.Configuration
         /// The connection string.
         /// </param>
         void UseConnectionString(string connectionString);
+
+        void UseAsDiscriminator();
     }
 }
