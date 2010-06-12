@@ -129,7 +129,7 @@ namespace Norm.Configuration
         /// </returns>
         public static string GetTypeDiscriminator(Type type)
         {
-            return _configuration.GetConfigurationMap().GetTypeDescriminator(type);
+            return _configuration != null ? _configuration.GetConfigurationMap().GetTypeDescriminator(type) : null;
         }
     }
 }
