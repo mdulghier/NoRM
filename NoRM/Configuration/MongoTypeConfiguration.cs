@@ -76,6 +76,10 @@ namespace Norm.Configuration
             get { return _collectionNames; }
         }
 
+        /// <summary>
+        /// Gets the discriminated types
+        /// </summary>
+        /// <value>True if a type is marked as a discriminated type, otherwise false.</value>
         internal static Dictionary<Type, bool> DiscriminatedTypes
         {
             get { return _discriminatedTypes; }

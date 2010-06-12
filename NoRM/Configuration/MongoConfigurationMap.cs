@@ -96,6 +96,11 @@ namespace Norm.Configuration
             return retval;
         }
 
+        /// <summary>
+        /// Gets the fluently configured discriminator type string for a type.
+        /// </summary>
+        /// <param name="type">The type for which to get the discriminator type.</param>
+        /// <returns>The discriminator type string for the given given.</returns>
         public string GetTypeDescriminator(Type type)
         {
             var inheritanceChain = GetInheritanceChain(type);

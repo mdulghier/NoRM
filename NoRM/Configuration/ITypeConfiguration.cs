@@ -22,6 +22,10 @@ namespace Norm.Configuration
         /// </param>
         void UseConnectionString(string connectionString);
 
+        /// <summary>
+        /// Marks the type as discriminator for all its subtypes. 
+        /// Alternative to the MongoDiscriminatorAttribute if it is not possible or wanted to put an attribute on the types.
+        /// </summary>
         void UseAsDiscriminator();
     }
 }
